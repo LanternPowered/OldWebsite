@@ -1,0 +1,102 @@
+---
+layout: pingy-documentation-base
+title: Pingy · Documentation
+project-name: Pingy
+project-id: pingy
+github-buttons: true
+description: A minimal ping server for minecraft.
+doc-tab: documentation
+doc-subtab: configuration
+---
+
+<div class="container">
+  <h2 class="title docs-title">Configuration</h2>
+  <hr>
+  <div class="content">
+    This section will explain what all the configuration options mean.
+    <table class="table table-striped table-bordered" style="margin-top: 10px;">
+      <thead>
+        <tr>
+          <th>Option</th>
+          <th style="text-align:center">Type</th>
+          <th style="text-align:center">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>ip</code></td>
+          <td style="text-align:center"><code>ip</code></td>
+          <td style="text-align:center">The ip address that server should be bound to.</td>
+        </tr>
+        <tr>
+          <td><code>port</code></td>
+          <td style="text-align:center"><code>number</code></td>
+          <td style="text-align:center">The port that server should be bound to.</td>
+        </tr>
+        <tr>
+          <td><code>use-epoll-when-available</code></td>
+          <td style="text-align:center"><code>true|false</code></td>
+          <td style="text-align:center">Whether the server should use epoll if it’s available. If it failed to apply you will be able to debug the cause in the debug mode, see <a href="{{ site.baseurl}}/pingy/documentation/adv-launch-params">advanced launch params.</td>
+        </tr>
+        <tr>
+          <td><code>message-of-the-day</code></td>
+          <td style="text-align:center"><code>string|text</code></td>
+          <td style="text-align:center">The message of the day (motd), is displayed under the server name. Supports the new line character <code>\n</code> and json text format.</td>
+        </tr>
+        <tr>
+          <td><code>legacy-message-of-the-day</code></td>
+          <td style="text-align:center"><code>string</code></td>
+          <td style="text-align:center">The message of the day (motd), is displayed under the server name. Supports only one line, this is only used for minecraft clients using version 1.6 or older.</td>
+        </tr>
+        <tr>
+          <td><code>outdated-message</code></td>
+          <td style="text-align:center"><code>string</code></td>
+          <td style="text-align:center">The message that is displayed in the right top corner.</td>
+        </tr>
+        <tr>
+          <td><code>outdated-message-tooltip</code></td>
+          <td style="text-align:center"><code>string</code></td>
+          <td style="text-align:center">The tooltip that will be displayed when hovering of the <code>outdated-message</code>. Supports the new line character <code>\n</code>.</td>
+        </tr>
+        <tr>
+          <td><code>disconnect-message</code></td>
+          <td style="text-align:center"><code>string|text</code></td>
+          <td style="text-align:center">The message that will be displayed when a player tries to join the server. Supports the new line character <code>\n</code> and json text format.</td>
+        </tr>
+        <tr>
+          <td><code>legacy-disconnect-message</code></td>
+          <td style="text-align:center"><code>string</code></td>
+          <td style="text-align:center">The message that will be displayed when a player tries to join the server. This is only used for minecraft clients using version 1.6 or older.</td>
+        </tr>
+        <tr>
+          <td><code>favicon</code></td>
+          <td style="text-align:center"><code>path</code></td>
+          <td style="text-align:center">The path of the favicon file, leave this empty if you want to disable it. The path is relative to the server root.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    The <code>text</code> data type in the table refers to the minecraft text json format, the specification can be found on the minecraft <a href="http://minecraft.gamepedia.com/Commands#Raw_JSON_text">wiki</a>.
+
+    <div class="notification is-warning" style="margin-top: 15px;">
+      Faulty formatted text json may crash the client and isn't validated on the server side, so be careful.
+    </div>
+  </div>
+  <h3 class="title">Example</h3>
+  <hr>
+  <figure class="highlight" style="box-shadow: none;">
+    <pre><code class="language-json">{
+  "<span class="na">ip</span>": <span class="s">""</span>,
+  "<span class="na">port</span>": <span class="s">25565</span>,
+  "<span class="na">use-epoll-when-available</span>": <span class="s">true</span>,
+  "<span class="na">message-of-the-day</span>": <span class="s">"Not sure what's going on? The server seems to be down."</span>,
+  "<span class="na">legacy-message-of-the-day</span>": <span class="s">"The server seems to be down."</span>,
+  "<span class="na">outdated-message</span>": <span class="s">"You're out of date."</span>,
+  "<span class="na">outdated-message-tooltip</span>": <span class="s">"Nobody is online."</span>,
+  "<span class="na">disconnect-message</span>": <span class="s">"You know that the server is offline, right?"</span>,
+  "<span class="na">legacy-disconnect-message</span>": <span class="s">"You know that the server is offline, right?"</span>,
+  "<span class="na">favicon</span>": <span class="s">"icon.png"
+</span>}
+</code></pre>
+  </figure>
+</div>

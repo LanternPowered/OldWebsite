@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="hero-body">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column">
+        <p class="subtitle" style="max-width: 90%; font-size: 30px">
+          <strong>{% if page.project-name %}{{ page.project-name }}{% else %}{{ page.title }}{% endif %}</strong>
+        </p>
+      </div>
+      {% if page.github-buttons %}
+      <div class="column is-narrow">
+        <a class="github-button" href="https://github.com/{{ site.organization }}/{{ page.project-name }}" data-icon="octicon-star" data-style="mega" data-count-href="/{{ site.organization }}/{{ page.project-name }}/stargazers" data-count-api="/repos/{{ site.organization }}/{{ page.project-name }}#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star {{ site.organization }}/{{ page.project-name }} on GitHub">Star</a>
+        <span style="margin-right: 15px;"></span>
+        <a class="github-button" href="https://github.com/{{ site.organization }}/{{ page.project-name }}/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/{{ site.organization }}/{{ page.project-name }}/network" data-count-api="/repos/{{ site.organization }}/{{ page.project-name }}#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork {{ site.organization }}/{{ page.project-name }} on GitHub">Fork</a>
+        <span style="margin-right: 15px;"></span>
+        <a class="github-button" href="https://github.com/{{ site.organization }}/{{ page.project-name }}" data-icon="octicon-eye" data-style="mega" data-count-href="/{{ site.organization }}/{{ page.project-name }}/watchers" data-count-api="/repos/{{ site.organization }}/{{ page.project-name }}#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch {{ site.organization }}/{{ page.project-name }} on GitHub">Watch</a>
+      </div>
+      {% endif %}
+    </div>
+    <p class="subtitle" style="margin-top: -13px; max-width: 90%; font-size: 22px">
+      {{ page.description }}
+    </p>
+  </div>
+</div>
+<div class="hero-foot">
+  <div class="container">
+    <nav class="tabs is-boxed">
+      <ul>
+        <li {% if page.doc-tab == 'overview' %}class="is-active"{% endif %}>
+          <a href="{{ site.baseurl }}/{{ page.project-id }}/overview">Overview</a>
+        </li>
+        <li {% if page.doc-tab == 'documentation' %}class="is-active"{% endif %}>
+          <a href="{{ site.baseurl }}/{{ page.project-id }}/documentation/welcome">Documentation</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<section class="section">
+  {{ content }}
+</section>

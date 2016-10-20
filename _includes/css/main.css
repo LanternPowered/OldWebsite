@@ -1,0 +1,108 @@
+.hero.is-primary {
+  /*color: white;*/
+    color: #4ec1b4;
+  background-color: #{{ site.color_gray }};
+}
+
+.hero.is-primary {
+  color: #4ec1b4;
+}
+
+.button.is-primary {
+  background-color: #4ec1b4;
+}
+
+.button.is-primary:hover {
+  background-color: #54d4c5;
+}
+
+.menu-list a.is-active {
+  background-color: #4ec1b4;
+}
+
+.section {
+  background-color: white;
+  color: black;
+  padding: 40px 20px;
+}
+
+.hero.is-primary .title {
+  color: black;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.site-title.svg path {
+  fill: rgba(255,255,255,.7);
+}
+
+.site-title.svg:hover path {
+  fill: white;
+}
+
+.site-intro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content a:not(.button):visited {
+  color: #35bbac;
+}
+
+.content a:not(.button) {
+  color: #35bbac;
+}
+
+/* Home page projects */
+.is-projects {
+  background-color: rgb(78, 193, 180);
+}
+
+.hero.is-primary .is-projects .title {
+  color: white;
+}
+
+.is-projects .tile article {
+    background-color: rgba(68, 68, 69, 0.46);
+}
+
+.is-projects .tile article:hover {
+    background-color: rgba(68, 68, 69, 0.6);
+}
+
+/* Project pages */
+.hero.is-primary .project-docs .title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.hero.is-primary .project-docs h2.title {
+  margin-top: 27px;
+  font-size: 20px;
+}
+
+.hero.is-primary .project-docs h3.title {
+  margin-top: 22px;
+  font-size: 17px;
+}
+
+.hero.is-primary .project-docs h4.title {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.hero.is-primary .project-docs h1.docs-title,
+.hero.is-primary .project-docs h2.docs-title,
+.hero.is-primary .project-docs h3.docs-title,
+.hero.is-primary .project-docs h4.docs-title {
+  margin-top: 0px;
+}
+
+.project-docs hr {
+  margin: 12px 0;
+}
+
+.project-docs ul {
+  list-style: disc outside;
+}

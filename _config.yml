@@ -1,0 +1,26 @@
+title: LanternPowered
+email: contact@lanternpowered.org
+description: A light in the sea brings you a open-source and moddable minecraft server.
+baseurl: ""
+url: https://www.lanternpowered.org
+twitter_username: LanternPowered
+github_username: LanternPowered
+
+# The orginanization
+organization: LanternPowered
+# The start year of the project
+start_year: 2015
+# The logo
+logo: assets/images/lantern-logo.png
+title-svg: assets/images/lantern-title.svg
+
+# Colors
+color_gray: 444445
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

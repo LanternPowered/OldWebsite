@@ -1,0 +1,21 @@
+---
+layout: project
+---
+
+<div class="container">
+  <div class="columns">
+    <div class="column is-3">
+      <aside class="menu">
+        <ul class="menu-list">
+          <li><a {% if page.doc-subtab == 'welcome' %}class="is-active"{% endif %} href="{{ site.basedir }}/pingy/documentation/welcome">Welcome</a></li>
+          <li><a {% if page.doc-subtab == 'getting-started' %}class="is-active"{% endif %} href="{{ site.basedir }}/pingy/documentation/getting-started">Getting started</a></li>
+          <li><a {% if page.doc-subtab == 'configuration' %}class="is-active"{% endif %} href="{{ site.basedir }}/pingy/documentation/configuration">Configuration</a></li>
+          <li><a {% if page.doc-subtab == 'adv-launch-params' %}class="is-active"{% endif %} href="{{ site.basedir }}/pingy/documentation/adv-launch-params">Advanced launch parameters</a></li>
+        </ul>
+      </aside>
+    </div>
+    <div class="column project-docs">
+      {{ content }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+---
+layout: pingy-documentation-base
+title: Pingy · Documentation
+project-name: Pingy
+project-id: pingy
+github-buttons: true
+description: A minimal ping server for minecraft.
+doc-tab: documentation
+doc-subtab: getting-started
+---
+
+<div class="container">
+  <h2 class="title docs-title">Getting started</h2>
+  <hr>
+  <h3 class="title">Prerequisites</h3>
+  <hr>
+  <div class="content">
+    <ul>
+      <li>
+        <a href="https://java.com/en/download/manual.jsp">Java 8+</a>
+      </li>
+      <li>
+        <a href="https://docs.oracle.com/goldengate/1212/gg-winux/GDRAD/java.htm#BGBFHBEA">Setup the JRE environment variables</a>
+      </li>
+    </ul>
+  </div>
+  <h3 class="title">Installation</h3>
+  <hr>
+  <h4 class="title">Windows</h4>
+  <hr>
+  <div class="content">
+    <ol>
+      <li>
+        Download the latest or recommend pingy build if you haven't done so already.
+      </li>
+      <li>
+        Create a folder where you want to install the server and move the pingy jar (<code>pingy-**-.jar</code>) to the folder.
+      </li>
+      <li>
+        Rename the downloaded jar file to <code>pingy.jar</code>.
+      </li>
+      <li>
+        Create a script called <code>pingy-start.bat</code> and put the following content in it:
+        <figure class="highlight" style="box-shadow: none; margin-top: 7px; margin-bottom: 5px;">
+          <pre><code class="language-batch">java -jar pingy.jar<br>pause</code></pre>
+        </figure>
+      </li>
+      <li>
+        Run the <code>pingy-start.bat</code> file and close the window once the server is loaded. A configuration file should be generated.
+      </li>
+      <li>
+        Configure the server options, the explanation of the options can be found <a href="{{ site.basedir }}/pingy/documentation/configuration">here</a>.
+      </li>
+      <li>
+        Run the <code>pingy-start.bat</code>, your ping server should now be good to go.
+      </li>
+    </ol>
+    <h4 class="title">Linux</h4>
+    <hr>
+    <div class="content">
+      TODO
+    </div>
+    <h4 class="title">macOS</h4>
+    <hr>
+    <div class="content">
+      TODO
+    </div>
+  </div>
+</div>
