@@ -1,6 +1,5 @@
 .hero.is-primary {
-  /*color: white;*/
-    color: #4ec1b4;
+  color: #4ec1b4;
   background-color: #{{ site.color_gray }};
 }
 
