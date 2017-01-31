@@ -63,11 +63,19 @@
 }
 
 .is-projects .tile article {
-    background-color: rgba(68, 68, 69, 0.46);
+  background-color: rgba(68, 68, 69, 0.46);
 }
 
 .is-projects .tile article:hover {
-    background-color: rgba(68, 68, 69, 0.6);
+  background-color: rgba(68, 68, 69, 0.6);
+}
+
+.is-project .button {
+  background-color: #55b5aa;
+}
+
+.hero.is-primary .is-project .subtitle a {
+  color: #a7fff5;
 }
 
 /* Project pages */
